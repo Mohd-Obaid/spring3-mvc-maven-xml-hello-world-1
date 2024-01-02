@@ -31,7 +31,7 @@ pipeline {
                 script {
                     // If you are using Windows then you should use "bat" step
                     // Since unit testing is out of the scope we skip them
-                    sh 'maven -Dmaven.test.failure.ignore=true install'
+                    sh 'mvn -Dmaven.test.failure.ignore=true install'
                 }
             }
         }
